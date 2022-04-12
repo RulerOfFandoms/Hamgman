@@ -1,5 +1,5 @@
-def HangMan(x):
-    if x == 0:
+def HangMan(x):  # function to play/choose the graphics
+    if x == 0: # starting hangman
         print("   __________  ")
         print("   |        |  ")
         print("   |           ")
@@ -52,7 +52,7 @@ def HangMan(x):
         print("   |        |  ")
         print("   |           ")
         print(" __|________   ")
-    elif x == 6:
+    elif x == 6: # last chance
         x = x + 1
         print("   __________  ")
         print("   |        |  ")
@@ -62,7 +62,7 @@ def HangMan(x):
         print("   |       /   ")
         print(" __|________   ")
         print("On more wrong and you're dead...")
-    elif x == 7:
+    elif x == 7:  # you die
         print("   __________  ")
         print("   |        |  ")
         print("   |        0  ")
@@ -71,7 +71,4 @@ def HangMan(x):
         print("   |       / \ ")
         print(" __|________   ")
         print("You died...")
-        exit()
-#import MainHangManFile
-#from MainHangManFile import letterguess
-#MainHangManFile.letterguess()
+        exit()  # stop code
